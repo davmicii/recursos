@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "20cf90bc-ec65-4b49-a7bd-7873ee9d04fc",
+		"name": "Alumno",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30265673"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"nombre\":\"\",\r\n\t\"apellido\":\"\",\r\n\t\"maestro_Id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/alumno/insertar"
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/alumno/listar"
+			},
+			"response": []
+		},
+		{
+			"name": "ReadByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/alumno/listar/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"nombre\":\"\",\r\n\t\"apellido\":\"\",\r\n\t\"maestro_Id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/alumno/modificar/4"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/alumno/eliminar/3"
+			},
+			"response": []
+		}
+	]
+}

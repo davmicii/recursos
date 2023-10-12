@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "bde3518a-70b6-440d-9485-143299078358",
+		"name": "Autenticacion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30265673"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"correo\":\"example2@gmail.com\",\r\n    \"contrasenia\":\"1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJleGFtcGxlMkBnbWFpbC5jb20iLCJpYXQiOjE2OTY4MzA5OTIsImV4cCI6MTY5NjgzMjQzMn0.oo97sGv0VJ74Q_X9PwwjGYBPzid0OtYdpqDTw44emOs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"correo\":\"example2@gmail.com\",\r\n    \"contrasenia\":\"1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/auth/register"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "ee7108fd-8bba-4dcd-b239-ed4ee383781b",
+		"name": "Maestro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30265673"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"nombre\":\"\",\r\n\t\"apellido\":\"\",\r\n\t\"titulo\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/maestro/insertar"
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8080/maestro/listar"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"nombre\":\"\",\r\n\t\"apellido\":\"\",\r\n\t\"titulo\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/maestro/modificar/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/maestro/eliminar/1"
+			},
+			"response": []
+		}
+	]
+}
